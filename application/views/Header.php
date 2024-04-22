@@ -41,60 +41,84 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-<style>
-  
-    ul, ol {
-    list-style-type: none;
-}
-@media screen and (max-width:991px) {
-    .navbar .active{
-        color: #000180 !important;
-    }
-        .mtt{
-font-size: 24px;
-}
-    }
-</style>
+    <style>
+        ul,
+        ol {
+            list-style-type: none;
+        }
+
+        @media screen and (max-width:991px) {
+            .navbar .active {
+                color: #000180 !important;
+            }
+
+            .mtt {
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- ======= Header ======= -->
     <!-- End Top Bar -->
-
+    <div class="hero-banner p-3" >
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="is--hidden-on-mobile">Healthie's refreshed website and logo are now live!</div> &nbsp;<a
+                    href="/brand-journey" class="button-text w-inline-block">
+                    <div class="button-text__wrapper">
+                        <div class="button__label">Explore Our New Brand</div>
+                       
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="bg is--purple-off-white-gradient"></div>
+    </div>
     <header id="header" class="header d-flex align-items-center addclass nav-down" style="   width:100%;">
 
         <div class="container-fluid container-xl d-flex align-items-center  row "
             style="max-width: 100%;margin: auto;        justify-content: space-around;">
-            <a href="<?php echo base_url(); ?>" class="logo d-flex align-items-center col-md-2 col-6 justify-content-start">
-                
-                <img class="ds" src="assets/img/logo.png" style="max-width:250px;" alt=""> 
-                
-                
+            <a href="<?php echo base_url(); ?>"
+                class="logo d-flex align-items-center col-md-2 col-6 justify-content-start">
+
+                <img class="ds" src="assets/img/logo.png" style="max-width:250px;" alt="">
+
+
             </a>
             <nav id="navbar" class="navbar col-md-7 ">
-            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+                <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
                 <ul style="width: 100%;     justify-content: space-around;">
-                    <li><a href="<?php echo base_url(); ?>">Home</a></li>
-                    <li><a href="<?php echo base_url('About_Us'); ?>">About Us</a></li>
-                    <li><a href="<?php echo base_url('Services'); ?>">Services</a></li>
+                    <li><a href="<?php echo base_url(); ?>">Platform</a></li>
+                    <li><a href="<?php echo base_url('About_Us'); ?>">Solution</a></li>
+                    <li><a href="<?php echo base_url('Services'); ?>">Pricing</a></li>
+                    <li class="dropdown"><a href="Services">Resources <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="<?php echo base_url('Accounting'); ?>">Accounting</a></li>
+
+                        </ul>
+                    </li>
+
                     <!-- <li class="dropdown"><a href="Services">Services <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
                             <li><a href="<?php echo base_url('Accounting'); ?>">Accounting</a></li>
                            
                         </ul>
                     </li> -->
-                   
+
                     <li><a href="<?php echo base_url('Articles_and_News'); ?>">Articles & News</a></li>
                     <li><a href="<?php echo base_url('Contact'); ?>">Contact Us</a></li>
-                    
+
                 </ul>
             </nav><!-- .navbar -->
 
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list col-6 text-end m-0"></i>
-            
+
 
         </div>
     </header><!-- End Header -->
-    <!-- End Header --> 
+    <!-- End Header -->

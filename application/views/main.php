@@ -1,6 +1,13 @@
 <link href="<?php echo base_url(); ?>/assets/css/mainpage.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+
 <style>
   section {
     z-index: 999;
@@ -10,19 +17,23 @@
     background-color: transparent;
     position: absolute;
   }
-.mobile-nav-toggle{
-color: #000 ;
-}
-.navbar a{
-  color: #2f2e2e;
-}
-.sticked .navbar a{
-  color: #fff;
-}
 
-.sticked .mobile-nav-toggle{
-  color: #fff !important;
+  .mobile-nav-toggle {
+    color: #000;
   }
+
+  .navbar a {
+    color: #2f2e2e;
+  }
+
+  .sticked .navbar a {
+    color: #fff;
+  }
+
+  .sticked .mobile-nav-toggle {
+    color: #fff !important;
+  }
+
   .video-section {
     position: relative;
     height: 100vh;
@@ -115,15 +126,17 @@ color: #000 ;
 
   @media screen and (max-width: 768px) {
     .bg-black1 {
-   
-    min-height: 400px !important;
-  
-}
-.def {
-   
-    min-height: 400px !important;
-  
-}
+
+      min-height: 400px !important;
+
+    }
+
+    .def {
+
+      min-height: 400px !important;
+
+    }
+
     .text-overlay h1 {
       margin: 0;
       font-size: 3em;
@@ -173,7 +186,7 @@ color: #000 ;
     outline: none;
     color: #fff;
     background: #00243a;
-    
+
     position: relative;
     z-index: 0;
     border-radius: 10px;
@@ -200,7 +213,7 @@ color: #000 ;
     color: #000
   }
 
-  
+
 
   .dd .card:hover:before {
     opacity: 1;
@@ -218,7 +231,7 @@ color: #000 ;
     border-radius: 10px;
   }
 
-  
+
   .bg-black1 {
     width: 100%;
     height: 100%;
@@ -238,9 +251,6 @@ color: #000 ;
     display: block;
     max-width: 250px;
   }
-  
-
-
 </style>
 <section class="p-0">
   <div class="main">
@@ -252,7 +262,7 @@ color: #000 ;
           <h3>PRECISION <strong>|</strong> ANALYSIS <strong>|</strong> GROWTH</h3>
         </div>
       </div>
-      
+
     </div>
     <div class="mob">
       <div class="video-overlay" style="position: relative;">
@@ -264,165 +274,52 @@ color: #000 ;
       </div>
 
     </div>
-    <div class="def" style="background-image: url('assets/img/back1.jpg');">
-      <div class="bg-black1">
-        <div class="container">
-          <h2>WHAT DEFINES US</h2>
-          <div class="un mt-md-5 mt-0"></div>
-          <h3><em>What defines us is not what we do, but how we do it.</em></h3>
-          <p class="mt-md-5 mt-3">
-            ADLedger is dedicated to fostering growth and innovation at every level. Our mission is to create a
-            collaborative work environment that promotes personal and professional development for both our clients and
-            team members.
-          </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="container">
-
-    <style>
-      .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        min-height: 270px;
-      }
-
-      .count {
-        background-image: url('assets/img/dm1.png');
-        padding: 40px 12px;
-        min-height: 200px;
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-      }
-    </style>
-
-
-    <div class="row mt-md-5 mt-5 pb-md-5 pb-3  dd">
-      <div class="col-md-12 mt-md-3">
-        <h2 class="text-center" style="width: 100%;">Why Choose ADLedger Outsourcing?</h2>
-        <p class="text-center mt-3" style="width: 100%;">ADLedger provides trusted Outsourcing Services for bookkeeping,
-          payroll, and tax preparation.</p>
-      </div>
-      <div class="col-md-4 p-md-5 p-3">
-        <div class="card p-md-4 p-5">
-          <img src="" alt="">
-          <h6 class="pt-4 bold" style="    font-weight: 600;">DAY-TO-DAY ACCOUNTING ENTRIES IN SOFTWARES</h6>
-          <p class="pt-3">Efficient and accurate data entry services using Tally, QB & many more ERP software ensuring
-            precise and up-to-date financial records.</p>
-        </div>
-      </div>
-      <div class="col-md-4 p-md-5 p-3">
-        <div class="card p-md-4 p-5">
-          <img src="" alt="">
-          <h6 class="pt-4 bold" style="    font-weight: 600;">QUICKBOOKS SUPPPORT</h6>
-          <p class="pt-3">Specialized assistance in QuickBooks for streamlined financial management and reporting.</p>
-        </div>
-      </div>
-      <div class="col-md-4 p-md-5 p-3">
-        <div class="card p-md-4 p-5">
-          <img src="" alt="">
-          <h6 class="pt-4 bold" style="    font-weight: 600;">EXCEL ACCOUNTING & REPORTING</h6>
-          <p class="pt-3">Tailored Excel solutions for comprehensive and customizable accounting needs.</p>
-        </div>
-      </div>
-    </div>
-
 
 
   </div>
+
+  
 
 </section>
-<section style="background-color:#9cc4e4;">
-  <div class="container">
-    <div class="row text-black pt-4">
-      <div class="col-md-5 tc1">
-        <h6>7+ Years Of Experience</h6>
-        <h3 class="mt-4" style="font-weight: 600;">
-          ADLedger offers comprehensive services in bookkeeping, payroll, and tax preparation</h3>
-        <p class="mt-4">ADLedger is a finance and accounting-focused company, specializing in providing comprehensive
-          services for CPA firms and businesses of various sizes. Our expertise lies in delivering top-notch financial
-          and accounting solutions, supported by the latest technologies. We understand the significance of even routine
-          financial and accounting tasks, and our commitment is to enhance the overall business performance of our
-          clients through our dedicated services.</p>
-      </div>
-
-      <div class="col-md-7 row cou text-white m-0" style="    align-items: center;">
-        <div class="col-md-4 col-8">
-          <div class="count">
-            <h2>7+</h2>
-            <h6 class="mt-2">Years Of Work Experience</h6>
-          </div>
-        </div>
-        <div class="col-md-4 col-8 ">
-          <div class="count">
-            <h2>100k+</h2>
-            <h6 class="mt-2">Hours Of Bookkeeping, Payroll & Tax Return Processing</h6>
-          </div>
-        </div>
-        <div class="col-md-4 col-8">
-          <div class="count">
-            <h2 style="width: 100%;">30+</h2><br>
-            <h6 class="mt-2" style="width: 100%;">Client Projects</h6>
-          </div>
-        </div>
+<section color-mode="light" theme-mode="healthie" class="section is--small">
+  <div class="container is--overflow">
+    <div class="flex-row is--centered">
+      <div class="wrapper-medium">
+        <h2 class="tagline text-center">Healthie is trusted by the leaders reshaping healthcare delivery</h2>
       </div>
     </div>
-
   </div>
-</section>
-<section class="container d-none">
-  <div class="row co1 ">
-    <div class="col-md-12 mt-3">
-      <h2 class="text-center" style="width: 100%;">Bolgs</h2>
-      <p class="text-center mt-3" style="width: 100%;">ADLedger provides trusted Outsourcing Services for bookkeeping,
-        payroll, and tax preparation.</p>
-    </div>
-    <div class="col-md-4 p-md-4 mtm">
-      <img src="assets/img/blog1.png" alt="" width="100%">
-
-      <h6 class="mt-3" style="font-weight: 600;">Director &nbsp;-&nbsp;<span
-          style="font-weight:200;font-size:small;">13-01-2024</span></h6>
-      <h4 style="font-weight: 600;">QUICKBOOKS SUPPPORT</h4>
-      <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim necessitatibus aut commodi
-        sequi ....
-      </p>
-      <button class="btn btn-success" style="padding: 10px 20px;">Read more...</button>
-    </div>
-    <div class="col-md-4 p-md-4 mtm">
-      <img src="assets/img/blog1.png" alt="" width="100%">
-
-      <h6 class="mt-3" style="font-weight: 600;">Director &nbsp;-&nbsp;<span
-          style="font-weight:200;font-size:small;">13-01-2024</span></h6>
-      <h4 class="mt-3" style="font-weight: 600;">QUICKBOOKS SUPPPORT</h4>
-      <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim necessitatibus aut commodi
-        sequi ....
-      </p>
-      <button class="btn btn-success" style="padding: 10px 20px;">Read more...</button>
-    </div>
-    <div class="col-md-4 p-md-4 mtm">
-      <img src="assets/img/blog1.png" alt="" width="100%">
-
-      <h6 class="mt-3" style="font-weight: 600;">Director &nbsp;-&nbsp;<span
-          style="font-weight:200;font-size:small;">13-01-2024</span></h6>
-      <h4 style="font-weight: 600;">QUICKBOOKS SUPPPORT</h4>
-      <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim necessitatibus aut commodi
-        sequi ....
-      </p>
-      <button class="btn btn-success" style="padding: 10px 20px;">Read more...</button>
-    </div>
+  <div class="sl">
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">Slide 01</li>
+          <li class="splide__slide">Slide 02</li>
+          <li class="splide__slide">Slide 03</li>
+          <li class="splide__slide">Slide 01</li>
+          <li class="splide__slide">Slide 02</li>
+          <li class="splide__slide">Slide 03</li>
+          <li class="splide__slide">Slide 01</li>
+          <li class="splide__slide">Slide 02</li>
+          <li class="splide__slide">Slide 03</li>
+        </ul>
+      </div>
+    </section>
   </div>
+  
+  <div class="bg is--secondary"></div>
 </section>
+
 
 
 
 <script>
+  var splide = new Splide( '.splide', {
+    perPage: 3,
+    rewind : true,
+  } );
+  
+  splide.mount();
   // Parallax effect using JavaScript
   document.addEventListener("DOMContentLoaded", function () {
     var parallaxSection = document.getElementById("parallax-section");
@@ -439,7 +336,7 @@ color: #000 ;
 
     window.addEventListener("scroll", updateParallax);
   });
- 
+
 </script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -459,22 +356,22 @@ color: #000 ;
 </script>
 <script>
   //window.addEventListener('scroll', function () {
-    //var dsImage = document.querySelector('.ds');
-   // var ddsImage = document.querySelector('.dds');
+  //var dsImage = document.querySelector('.ds');
+  // var ddsImage = document.querySelector('.dds');
 
-    // Get the scroll position
-   // var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+  // Get the scroll position
+  // var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-    // Define the threshold for switching images (adjust as needed)
-    //var switchThreshold = 20;
+  // Define the threshold for switching images (adjust as needed)
+  //var switchThreshold = 20;
 
-    // Toggle the visibility of images based on scroll position
-   // if (scrollPosition > switchThreshold) {
-    ////  dsImage.style.display = 'none';
-      //ddsImage.style.display = 'inline-block';
-   // } else {
-    //  dsImage.style.display = 'inline-block';
-    //  ddsImage.style.display = 'none';
-   // }
+  // Toggle the visibility of images based on scroll position
+  // if (scrollPosition > switchThreshold) {
+  ////  dsImage.style.display = 'none';
+  //ddsImage.style.display = 'inline-block';
+  // } else {
+  //  dsImage.style.display = 'inline-block';
+  //  ddsImage.style.display = 'none';
+  // }
   //});
 </script>
