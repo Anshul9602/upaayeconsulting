@@ -2,27 +2,7 @@
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <style>
-  section {
-    z-index: 999;
-  }
-
-  .header {
-    background-color: transparent;
-    position: absolute;
-  }
-.mobile-nav-toggle{
-color: #000 ;
-}
-.navbar a{
-  color: #2f2e2e;
-}
-.sticked .navbar a{
-  color: #fff;
-}
-
-.sticked .mobile-nav-toggle{
-  color: #fff !important;
-  }
+  
   .video-section {
     position: relative;
     height: 100vh;
@@ -47,12 +27,12 @@ color: #000 ;
   }
 
   .text-overlay {
-    position: absolute;
-    top: 30%;
+    position: fixed;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #00243a;
+    color: white;
     z-index: 1;
   }
 
@@ -100,41 +80,18 @@ color: #000 ;
 
   .def h3 {
     font-size: 22px;
-    line-height: 1.2;
+    line-height: 1.91;
     margin-top: 20px;
   }
-
 
   .def p {
     color: #fff;
   }
 
-  .mob {
-    display: none;
-  }
-
   @media screen and (max-width: 768px) {
-    .bg-black1 {
-   
-    min-height: 400px !important;
-  
-}
-.def {
-   
-    min-height: 400px !important;
-  
-}
     .text-overlay h1 {
       margin: 0;
       font-size: 3em;
-    }
-
-    .desk {
-      display: none;
-    }
-
-    .mob {
-      display: block !important;
     }
 
     .text-overlay h3 {
@@ -167,13 +124,15 @@ color: #000 ;
     }
   }
 
+
+
   .dd .card {
 
     border: none;
     outline: none;
     color: #fff;
     background: #00243a;
-    
+    cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 10px;
@@ -181,15 +140,15 @@ color: #000 ;
 
   .dd .card:before {
     content: '';
-    background: linear-gradient(45deg, #ff7300, #ff0000);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
-    top: -4px;
-    left: -4px;
+    top: -2px;
+    left: -2px;
     background-size: 400%;
     z-index: -1;
-    filter: blur(1px);
-    width: calc(100% + 8px);
-    height: calc(100% + 8px);
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
@@ -200,7 +159,9 @@ color: #000 ;
     color: #000
   }
 
-  
+  .dd .card:active:after {
+    background: transparent;
+  }
 
   .dd .card:hover:before {
     opacity: 1;
@@ -218,64 +179,34 @@ color: #000 ;
     border-radius: 10px;
   }
 
-  
-  .bg-black1 {
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    min-height: 600px;
-    justify-content: center;
-    display: flex;
-    background-color: black;
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+
+    50% {
+      background-position: 400% 0;
+    }
+
+    100% {
+      background-position: 0 0;
+    }
   }
-
-  .dds {
-    display: none;
-    max-width: 250px;
-  }
-
-  .ds {
-    display: block;
-    max-width: 250px;
-  }
-  
-
-
 </style>
 <section class="p-0">
   <div class="main">
-    <div class="video-section desk" id="parallax-section">
-      <div class="video-overlay" style="position: relative;">
-        <img src="assets/img/ban1.jpg" alt="" style="width: 100%;">
-        <div class="text-overlay">
-          <h1>ACCOUNTING</h1>
-          <h3>PRECISION <strong>|</strong> ANALYSIS <strong>|</strong> GROWTH</h3>
-        </div>
-      </div>
-      
-    </div>
-    <div class="mob">
-      <div class="video-overlay" style="position: relative;">
-        <img src="assets/img/ban1mob.png" alt="" style="width: 100%;">
-        <div class="text-overlay" style="WIDTH: 100%;">
-          <h1>ACCOUNTING</h1>
-          <h3>PRECISION <strong>|</strong> ANALYSIS <strong>|</strong> GROWTH</h3>
-        </div>
-      </div>
-
-    </div>
+  
     <div class="def" style="background-image: url('assets/img/back1.jpg');">
-      <div class="bg-black1">
-        <div class="container">
-          <h2>WHAT DEFINES US</h2>
-          <div class="un mt-md-5 mt-0"></div>
-          <h3><em>What defines us is not what we do, but how we do it.</em></h3>
-          <p class="mt-md-5 mt-3">
-            ADLedger is dedicated to fostering growth and innovation at every level. Our mission is to create a
-            collaborative work environment that promotes personal and professional development for both our clients and
-            team members.
-          </p>
-        </div>
+      <div class="container">
+        <h1>FINANCE</h1>
+        <div class="hh mt-4" style="background-color: #fff;height:3px; width:150px;"></div>
+        <div class="un mt-5"></div>
+        
+        
+        <h5 class="mt-3" style="font-weight: 400;line-height: 1.5;">
+         
+Recognizing the unique needs of entrepreneurial borrowers, ADLedger introduced its bridge lending platform in 2023. Over the ensuing years, we have consistently expanded and refined our lending capabilities, establishing a comprehensive platform that now provides flexible financing solutions across 17 states (CA, AZ, TX, OR, CO, ID, UT, WA, TN, NC, GA, PA, MA, MD, VA, IL, FL) and the District of Columbia. ADLedger's lending portfolio covers various product classes, including retail, office, multi-family, industrial, mixed-use, non-owner occupied single-family residences (SFRs), and urban infill land. Our commitment lies in delivering flexibility, certainty of closing, swift execution, and innovative deal structuring to empower entrepreneurs in their financial endeavors.
+        </h5>
       </div>
     </div>
 
@@ -304,29 +235,29 @@ color: #000 ;
     </style>
 
 
-    <div class="row mt-md-5 mt-5 pb-md-5 pb-3  dd">
+    <div class="row mt-md-5 mt-3 pb-md-5 pb-3  dd">
       <div class="col-md-12 mt-md-3">
         <h2 class="text-center" style="width: 100%;">Why Choose ADLedger Outsourcing?</h2>
         <p class="text-center mt-3" style="width: 100%;">ADLedger provides trusted Outsourcing Services for bookkeeping,
           payroll, and tax preparation.</p>
       </div>
-      <div class="col-md-4 p-md-5 p-3">
-        <div class="card p-md-4 p-5">
+      <div class="col-md-4 p-5">
+        <div class="card p-md-4 p-3">
           <img src="" alt="">
           <h6 class="pt-4 bold" style="    font-weight: 600;">DAY-TO-DAY ACCOUNTING ENTRIES IN SOFTWARES</h6>
           <p class="pt-3">Efficient and accurate data entry services using Tally, QB & many more ERP software ensuring
             precise and up-to-date financial records.</p>
         </div>
       </div>
-      <div class="col-md-4 p-md-5 p-3">
-        <div class="card p-md-4 p-5">
+      <div class="col-md-4 p-5">
+        <div class="card p-md-4 p-3">
           <img src="" alt="">
           <h6 class="pt-4 bold" style="    font-weight: 600;">QUICKBOOKS SUPPPORT</h6>
           <p class="pt-3">Specialized assistance in QuickBooks for streamlined financial management and reporting.</p>
         </div>
       </div>
-      <div class="col-md-4 p-md-5 p-3">
-        <div class="card p-md-4 p-5">
+      <div class="col-md-4 p-5">
+        <div class="card p-md-4 p-3">
           <img src="" alt="">
           <h6 class="pt-4 bold" style="    font-weight: 600;">EXCEL ACCOUNTING & REPORTING</h6>
           <p class="pt-3">Tailored Excel solutions for comprehensive and customizable accounting needs.</p>
@@ -339,11 +270,11 @@ color: #000 ;
   </div>
 
 </section>
-<section style="background-color:#9cc4e4;">
+<section style="background-color:#46387b;">
   <div class="container">
-    <div class="row text-black pt-4">
+    <div class="row text-white">
       <div class="col-md-5 tc1">
-        <h6>7+ Years Of Experience</h6>
+        <h6>+1 Years Of Experience</h6>
         <h3 class="mt-4" style="font-weight: 600;">
           ADLedger offers comprehensive services in bookkeeping, payroll, and tax preparation</h3>
         <p class="mt-4">ADLedger is a finance and accounting-focused company, specializing in providing comprehensive
@@ -353,23 +284,23 @@ color: #000 ;
           clients through our dedicated services.</p>
       </div>
 
-      <div class="col-md-7 row cou text-white m-0" style="    align-items: center;">
+      <div class="col-md-7 row cou" style="    align-items: center;">
         <div class="col-md-4 col-8">
           <div class="count">
-            <h2>7+</h2>
+            <h2>1+</h2>
             <h6 class="mt-2">Years Of Work Experience</h6>
           </div>
         </div>
         <div class="col-md-4 col-8 ">
           <div class="count">
-            <h2>100k+</h2>
+            <h2>100+</h2>
             <h6 class="mt-2">Hours Of Bookkeeping, Payroll & Tax Return Processing</h6>
           </div>
         </div>
         <div class="col-md-4 col-8">
           <div class="count">
-            <h2 style="width: 100%;">30+</h2><br>
-            <h6 class="mt-2" style="width: 100%;">Client Projects</h6>
+            <h2>30+</h2>
+            <h6 class="mt-2">Client Projects</h6>
           </div>
         </div>
       </div>
@@ -377,8 +308,8 @@ color: #000 ;
 
   </div>
 </section>
-<section class="container d-none">
-  <div class="row co1 ">
+<section class="container ">
+  <div class="row co1">
     <div class="col-md-12 mt-3">
       <h2 class="text-center" style="width: 100%;">Bolgs</h2>
       <p class="text-center mt-3" style="width: 100%;">ADLedger provides trusted Outsourcing Services for bookkeeping,
@@ -439,7 +370,17 @@ color: #000 ;
 
     window.addEventListener("scroll", updateParallax);
   });
- 
+  document.addEventListener("DOMContentLoaded", function () {
+    var parallaxContainer = document.querySelector('.def');
+    var scrollPosition = window.scrollY;
+
+    function updateParallax() {
+      scrollPosition = window.scrollY;
+      parallaxContainer.style.backgroundPositionX = -scrollPosition * 0.4 + 'px';
+    }
+
+    window.addEventListener("scroll", updateParallax);
+  });
 </script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -456,25 +397,4 @@ color: #000 ;
       additionalText.style.opacity = 1;
     });
   });
-</script>
-<script>
-  //window.addEventListener('scroll', function () {
-    //var dsImage = document.querySelector('.ds');
-   // var ddsImage = document.querySelector('.dds');
-
-    // Get the scroll position
-   // var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-
-    // Define the threshold for switching images (adjust as needed)
-    //var switchThreshold = 20;
-
-    // Toggle the visibility of images based on scroll position
-   // if (scrollPosition > switchThreshold) {
-    ////  dsImage.style.display = 'none';
-      //ddsImage.style.display = 'inline-block';
-   // } else {
-    //  dsImage.style.display = 'inline-block';
-    //  ddsImage.style.display = 'none';
-   // }
-  //});
 </script>

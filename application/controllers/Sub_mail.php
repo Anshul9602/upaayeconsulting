@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Invest_mail extends CI_Controller
+class Sub_mail extends CI_Controller
 {
 
 
@@ -29,12 +29,12 @@ class Invest_mail extends CI_Controller
 
 		$this->email->initialize($config);
 
-		$from = 'theodinjaipur@gmail.com';
-		//  $to = 'ronakvaya@gmail.com';
-		$to = 'team@intercharge.in';
+		$from = $_POST['email'];
+		 $to = 'contact.adledger@gmail.com';
+		// $to = 'team@intercharge.in';
 
-		$subject = 'Invest with Us mailbox';
-		$message = 'Hello Team, <br /> You have a contact request on ChargeSol Portal. <br />';
+		$subject = 'ADLedger Contact';
+		$message = 'Hello Team, <br /> You have a Subscribe request on ADLedger Portal. <br />';
 		unset($_POST['g-recaptcha-response']);
 
 		foreach ($_POST as $key => $value) {
@@ -53,6 +53,7 @@ class Invest_mail extends CI_Controller
 		redirect(base_url(''));
 
 	}
+
 
 
 

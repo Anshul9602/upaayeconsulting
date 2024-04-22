@@ -48,7 +48,7 @@ class Job_form extends CI_Controller
 		$this->email->initialize($config);
 	
 		$from = $_POST['email'];
-		$to = 'adledgerservices@gmail.com';
+		$to = 'contact.adledger@gmail.com';
 		$subject = 'Job Form Mailbox';
 		$message = 'Hello Team, <br /> You have a Job Form application from adledger Portal. <br />';
 		unset($_POST['g-recaptcha-response']);

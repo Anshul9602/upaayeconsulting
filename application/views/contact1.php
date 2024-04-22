@@ -64,7 +64,7 @@
 
               <h6 class="col-md-4 col-4" style="font-weight: 700;"><span><i class="bi bi-geo-alt"></i>
                   &nbsp;</span>Location:</h6>
-              <p class="col-md-8 col-8">C-87, Ribhu Path, Bhagirath Marg, Shyam Nagar,Jaipur, (Raj.) - 302019</p>
+              <p class="col-md-8 col-8">C-87, Ribhu Path, Bhagirath Marg, Shyam Nagar, Jaipur, (Raj.) - 302019</p>
             </div>
 
             <div class="email row">

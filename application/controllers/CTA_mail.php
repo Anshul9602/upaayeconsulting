@@ -26,7 +26,7 @@ class CTA_mail extends CI_Controller
 		$config['validation'] = TRUE; // bool whether to validate email or not
 		$this->email->initialize($config);
 		$from = $_POST['email'];
-		$to = 'adledgerservices@gmail.com';
+		$to = 'contact.adledger@gmail.com';
 		$subject = 'ADLedger Contact';
 		$message = 'Hello Team, <br /> You have a contact request on ADLedger Portal. <br />';
 		unset($_POST['g-recaptcha-response']);
